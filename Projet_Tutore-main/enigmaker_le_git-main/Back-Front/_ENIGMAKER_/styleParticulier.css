@@ -1,0 +1,29 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #063247;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f0f8ff;
+    height : 5%;
+}
+
+/* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ffff00;
+    }
+
+footer{
+    background: #063247;
+    color: yellow;
+    position:absolute;
+    bottom: auto;
+    padding: 20px 0;
+    width: 100%;
+}

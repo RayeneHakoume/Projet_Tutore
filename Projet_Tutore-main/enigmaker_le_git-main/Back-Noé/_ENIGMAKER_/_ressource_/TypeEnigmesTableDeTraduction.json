@@ -1,0 +1,25 @@
+﻿{
+	"1":{
+		"nom":"Pointer Sur IMG"
+	},
+
+	"2":{
+		"nom":"Énigme Textuelle"
+	},
+
+	"3":{
+		"nom":"Puzzle"
+	},
+
+	"4":{
+		"nom":"Mot Croisé"
+	},
+
+	"5":{
+		"nom":"Rébus"
+	},
+
+	"6": {
+		"nom": "Transition"
+	}
+}

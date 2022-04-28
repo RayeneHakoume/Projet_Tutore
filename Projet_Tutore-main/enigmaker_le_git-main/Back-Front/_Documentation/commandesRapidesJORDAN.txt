@@ -1,0 +1,16 @@
+--- JE VEUX ENVOYER ---
+
+git add -A & git commit -m "Travail Jordan" & git push
+
+
+--- JE VEUX ACTUALISER ---
+
+git pull
+
+--- JE VEUX VENIR DESSUS ---
+
+cd D:/Git/engmkr
+
+--- JE VEUX VOIR LA DESCRIPTION DU DERNIER COMMIT RÉALISÉ ---
+
+git show --summary

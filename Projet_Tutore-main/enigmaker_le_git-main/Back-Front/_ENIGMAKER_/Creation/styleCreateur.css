@@ -1,0 +1,115 @@
+/**
+
+    STYLE NOÉ
+
+**/
+
+#JSON {
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+}
+
+html, body {
+    /*margin: 0;*/
+    height: 99%;
+}
+
+#creation > .EnfantDirectCreation {
+    /*-_-_- DEBUG -_-_-*/
+    border: dashed 1px;
+    border-color: cornflowerblue;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+#creation {
+    /*page web globale en fait (on aurait pu utiliser body mais pas grave*/
+    width: 100%;
+    height: 99%;
+}
+
+#menu {
+    /*menu du haut*/
+    margin: 0 0 0.5% 0;
+    height: 6%;
+}
+
+#pere {
+    /*Le père du panneau latéral F1 et de la fenêtre de prévisualisation F2*/
+    display: flex; /*On affiche les deux <div> côte à côte*/
+    height: 94%;
+}
+
+.fils {
+    /*paramètres communs aux deux fils. width & height vont être écrasés plus bas*/
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: solid 1px;
+}
+
+/***---***---***--- LES FILS ---***---***---***/
+
+#f1 {
+    /*panneau latéral*/
+    width: 15%;
+    border-right: dotted 1px;
+}
+
+#f2 {
+    /*écran de prévisualisation*/
+    width: 85%;
+    border-left: dotted 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+
+/***---***---***--- LES ÉLÉMENTS D'UI ---***---***---***/
+.bouton {
+    border: groove 1px;
+    border-color: crimson;
+    user-select: none;
+    padding: 1%;
+}
+
+span {
+    /*
+        Les boutons sont de type span. en fait c'est useless de faire ça car span est de type inline.
+        donc j'aurais dû mettre les boutons en div qui est de type block.
+        et l'affichage de type block est plus facile à gérer que les inline 
+        mais flemme de changer tout mes boutons donc je mets les span en type inline-block
+    */
+    display: inline-block;
+}
+
+.bouton:hover {
+    border-color: forestgreen;
+    background-color: aquamarine;
+}
+
+.containerGM {
+    margin-bottom: 8%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    border-bottom: inset 1px;
+}
+
+.textInput {
+    width: 90%;
+}
+
+header {
+    display: none;
+}

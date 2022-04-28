@@ -1,0 +1,4 @@
+1 - Faire un checker dans "creation" pour que email soit unique 
+2 - Optimiser _scripts_/getProchainIndex*
+3 - Faire des pages d'erreur si utilisateur pas au bon endroit car bypass sécu 
+			> VueParcours si pas connecté par exemple

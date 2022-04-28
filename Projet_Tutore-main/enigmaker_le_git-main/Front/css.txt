@@ -1,0 +1,308 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* Police de l'écriture */;
+@font-face {
+    font-family: 'starife_demoregular';
+    src: url('font/starifedemo-webfont.woff2') format('woff2'),
+         url('font/starifedemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.logo{
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #06153b; /*#43A3DB*/
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    box-sizing: border-box;
+}
+
+/*-----------*/
+/* NAV BAR */
+/*-----------*/
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: 70px;
+    width: 100%;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+    display: inline;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: #FFFF00;
+    text-decoration: none;
+}
+nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+nav ul ul li a i{
+    margin-left: 45px;
+}
+
+nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+}
+
+
+/* Style the search box inside the navigation bar */
+#search{
+    padding: 3px;
+    border: 3px solid yellow;
+    border-radius: 40px;
+    outline: none;
+    padding-left: 20px;
+    background: url('./images/search.png')right no-repeat;
+
+}
+
+
+
+
+
+
+/**********/
+/* CONTENT */
+/**********/
+
+.titre1{
+    font-family: starife_demoregular;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+   text-align: center;
+    width: 1145px;
+    height: 85px;
+    left: 156px;
+    top: 100px;
+}
+.titre2{
+    color: black;
+    margin-left: 450px;
+     font-size: 25px;
+    
+}
+button{
+    background-color: yellow;
+}
+.missions{
+    top: 10px;
+    width: 80%;
+    min-width: 400px;
+    max-width: 900px;
+    margin: 0 auto; 
+    position: relative;
+   
+}
+.fig1{
+    position: absolute;
+    z-index: 99;
+}
+.fig2{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+.fig3{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+
+}
+.miss{
+    width: 30%;
+    padding-top: 55px;
+    padding-right: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+
+ 
+
+ 
+    .photo img{
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+            }
+    .photo{
+        width: 300px;
+        display: inline-block;
+    }
+
+/*
+
+.missions{
+    top: 10px;
+    width: 80%;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/*
+.miss{
+    width: 30%;
+    padding-top: 55px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.pic{
+    width:30px;
+}
+*/
+
+
+
+
+/*-----------*/
+/* FOOTER */
+/*-----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+footer{
+    background: #063247;
+    color: yellow;
+    padding: 20px 0;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.items{
+    flex-basis: 20%;
+}
+.items .logo{
+    text-transform: capitalize;
+    font-size: 1.4em;
+    color: #b6b6b6;
+}
+.items p{
+    margin: 1.2em 0;
+}
+.social{
+    align-items: flex-start;
+}
+.social a{
+    height: 30px;
+    width: 30px;
+    background: none;
+    border-radius: 5px;
+    margin:10px 5px;
+    text-align: center;
+}
+.social a i{
+    font-size: 1.3em;
+    line-height: 30px;
+}
+.items h2{
+    position: relative;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+.items h3::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    bottom: -4px;
+    left: 0;
+}
+hr{
+    opacity: .3;
+}
+footer .end{
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+@media (max-width:640px){
+    .items{
+    flex-basis: 80%;
+    margin: auto;
+}
+
+}
